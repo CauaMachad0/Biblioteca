@@ -1,0 +1,1 @@
+{"livros": {"001": {"titulo": "Python para Iniciantes", "autor": "Autor A", "quantidade": 4}, "002": {"titulo": "Data Science com Python", "autor": "Autor B", "quantidade": 3}}, "usuarios": {"U001": {"nome": "Jo\u00e3o"}, "U002": {"nome": "Maria"}}, "emprestimos": [{"usuario": "U001", "livro": "001", "data_emprestimo": "2025-01-20", "prazo_devolucao": "2025-02-03"}]}
