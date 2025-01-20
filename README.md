@@ -1,61 +1,95 @@
-Projeto: Sistema de Gerenciamento de Biblioteca
+# 📚 Sistema de Gerenciamento de Biblioteca
 
-Descrição
+![Python](https://img.shields.io/badge/Python-3.10-blue) ![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
 
-Este projeto é um sistema completo para gerenciar bibliotecas, com funcionalidades de CRUD para livros e usuários, registro de empréstimos, geração de relatórios de livros mais emprestados e persistência de dados usando arquivos JSON.
+Este é um sistema para gerenciar bibliotecas desenvolvido em **Python**. Ele permite que administradores controlem o acervo de livros, registros de empréstimos e usuários, além de gerar relatórios úteis para análise.
 
-Tecnologias Utilizadas
+---
 
-Linguagem: Python
+## ✨ Funcionalidades
 
-Estrutura de Dados: Dicionários e listas
+- **📚 Gerenciamento de Livros:**
+  - Adicionar, editar, excluir e listar livros.
+- **👥 Controle de Usuários:**
+  - Cadastro, edição e exclusão de usuários.
+- **📅 Registro de Empréstimos:**
+  - Controle de empréstimos e devoluções com alertas de atrasos.
+- **📊 Relatórios:**
+  - Relatórios sobre os livros mais emprestados e status dos empréstimos.
 
-Persistência: Arquivos JSON
+---
 
-Funcionalidades Principais
+## 🛠️ Tecnologias Utilizadas
 
-CRUD de Livros:
+- **Python 3.10**
+- **SQLite** para persistência de dados
 
-Adicionar, editar, deletar e listar livros.
+---
 
-Cada livro contém os atributos: código, título, autor e quantidade disponível.
+## 📂 Estrutura do Projeto
 
-CRUD de Usuários:
+```
+📂 biblioteca
+├── main.py              # Arquivo principal
+├── models/              # Contém os modelos de dados
+├── controllers/         # Lida com a lógica de negócios
+├── database/            # Scripts para gerenciamento do banco de dados
+└── utils/               # Ferramentas auxiliares
+```
 
-Adicionar, editar, deletar e listar usuários.
+---
 
-Cada usuário é identificado por um código e um nome.
+## 🚀 Como Usar
 
-Registro de Empréstimos:
+1. Certifique-se de ter o **Python 3.10** instalado.
+2. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/biblioteca-system.git
+   ```
+3. Navegue até o diretório do projeto:
+   ```bash
+   cd biblioteca-system
+   ```
+4. Instale as dependências necessárias (caso existam):
+   ```bash
+   pip install -r requirements.txt
+   ```
+5. Execute o sistema:
+   ```bash
+   python main.py
+   ```
 
-Registrar empréstimos de livros para usuários.
+---
 
-Controle de prazo de devolução com 14 dias a partir da data de empréstimo.
+## 📈 Melhorias Futuras
 
-Relatórios:
+- 🔒 **Autenticação e Autorização** para controle de acesso.
+- 🌐 **Interface Gráfica ou Web** para uma experiência de usuário mais rica.
+- 💾 **Integração com APIs externas** para busca de livros e informações.
 
-Exibir os livros mais emprestados com base no histórico de empréstimos.
+---
 
-Persistência de Dados:
+## 🤝 Contribuições
 
-Salvar e carregar dados de livros, usuários e empréstimos em um arquivo JSON.
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e enviar pull requests.
 
-Como Executar
+1. Fork o projeto.
+2. Crie uma branch com sua feature:
+   ```bash
+   git checkout -b minha-feature
+   ```
+3. Commit suas alterações:
+   ```bash
+   git commit -m 'Minha nova feature'
+   ```
+4. Envie sua branch:
+   ```bash
+   git push origin minha-feature
+   ```
+5. Abra um Pull Request.
 
-Instale o Python (versão 3.7 ou superior).
+---
 
-Clone ou baixe o repositório.
+## 🧑‍💻 Desenvolvedor
 
-Execute o arquivo principal:
-
-python biblioteca.py
-
-Interaja com o sistema através do terminal.
-
-Possíveis Melhorias
-
-Adicionar interface gráfica.
-
-Implementar notificações de prazo de devolução.
-
-Integração com banco de dados relacional.
+Feito com ❤️
